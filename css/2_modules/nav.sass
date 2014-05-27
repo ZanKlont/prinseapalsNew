@@ -1,10 +1,20 @@
 nav
 	+clearfix
 	+fill-parent
-	+position(fixed, 0 null null null)
+	padding: 0 1em
+	//+position(fixed, 0 null null null)
 	background: tint($dark-gray, 15%)
-	li
-		float: left
+	ul
+		li
+			padding: 1.5em 1em
+			float: left
+			font-family: Lato, $helvetica
+			line-height: 2em
+		li.social
+			float: right
+			width: 4em
+			img
+				display: block
 	a
 		color: white
 		&:hover

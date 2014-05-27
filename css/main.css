@@ -337,28 +337,57 @@ dl {
   dl dd {
     margin: 0; }
 
-body {
-  padding-top: 1.5em; }
-  body .container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto; }
-    body .container:after {
-      content: "";
-      display: table;
-      clear: both; }
+@font-face {
+  font-family: Lato;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Lato-Reg.eot");
+  src: url("../fonts/Lato-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Reg.woff") format("woff"), url("../fonts/Lato-Reg.ttf") format("truetype"), url("../fonts/Lato-Reg.svg#Lato") format("svg"); }
+@font-face {
+  font-family: Roboto Slab;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoSlab-Regular.eot");
+  src: url("../fonts/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-Regular.woff") format("woff"), url("../fonts/RobotoSlab-Regular.ttf") format("truetype"), url("../fonts/RobotoSlab-Regular.svg#Roboto Slab") format("svg"); }
+@font-face {
+  font-family: Open Sans Condensed;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-CondLight.eot");
+  src: url("../fonts/OpenSans-CondLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondLight.woff") format("woff"), url("../fonts/OpenSans-CondLight.ttf") format("truetype"), url("../fonts/OpenSans-CondLight.svg#Open Sans Condensed") format("svg"); }
+@font-face {
+  font-family: Open Sans Condensed;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-CondLight.eot");
+  src: url("../fonts/OpenSans-CondLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-CondLight.woff") format("woff"), url("../fonts/OpenSans-CondLight.ttf") format("truetype"), url("../fonts/OpenSans-CondLight.svg#Open Sans Condensed") format("svg"); }
+body .container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body .container:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 nav {
   width: 100%;
-  position: fixed;
-  top: 0;
+  padding: 0 1em;
   background: #515151; }
   nav:after {
     content: "";
     display: table;
     clear: both; }
-  nav li {
-    float: left; }
+  nav ul li {
+    padding: 1.5em 1em;
+    float: left;
+    font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    line-height: 2em; }
+  nav ul li.social {
+    float: right;
+    width: 4em; }
+    nav ul li.social img {
+      display: block; }
   nav a {
     color: white; }
     nav a:hover {
@@ -369,7 +398,7 @@ nav {
   float: left; }
 .title h1 {
   letter-spacing: -2px;
-  font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Roboto Slab, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 100;
   font-size: 4.5em;
   line-height: 1.4em;
@@ -377,7 +406,7 @@ nav {
   text-shadow: 0 2px 2px #002d3c;
   float: left; }
 .title h4 {
-  font-family: "Open Sans Condensed", "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Open Sans Condensed, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 100;
   float: left;
   line-height: 4em;
@@ -386,6 +415,26 @@ nav {
   margin-left: 0.5em; }
 
 .hero-banner {
+  min-height: 25em;
+  position: relative;
   background-color: #337b93;
   background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(120deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
   background-size: 70px 120px; }
+  .hero-banner #slider-ul {
+    position: relative;
+    padding: 1em;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    .hero-banner #slider-ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .hero-banner #slider-ul li {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      position: absolute; }
+      .hero-banner #slider-ul li:last-child {
+        margin-right: 0; }
