@@ -1,15 +1,11 @@
 .hero-banner
-	min-height: 25em
-	position: relative
 	background-color: tint(#005a79, 20%)
 	background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1))
 	background-size: 70px 120px
 	#slider-ul
-		position: relative
-		padding: 1em
-		+outer-container
+		padding: 1em 1em 18em
+		background-color: red
 		li
-			+span-columns(3)
-			position: absolute
+			+transition(all 900ms $ease-out-quint)
 
 		
