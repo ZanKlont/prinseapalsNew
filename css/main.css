@@ -414,7 +414,7 @@ nav {
   background-size: 70px 120px; }
   .hero-banner #slider-ul {
     padding: 1em 1em 18em;
-    background-color: red; }
+    background-color: lime; }
     .hero-banner #slider-ul li {
       -webkit-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
       -moz-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
