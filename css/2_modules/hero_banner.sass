@@ -1,11 +1,21 @@
-.hero-banner
-	background-color: tint(#005a79, 20%)
-	background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1))
-	background-size: 70px 120px
-	#slider-ul
-		padding: 1em 1em 18em
-		background-color: lime
-		li
-			+transition(all 900ms $ease-out-quint)
-
-		
+body
+	//overflow-x: hidden
+	.hero-banner
+		background-color: tint(#005a79, 20%)
+		background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1))
+		background-size: 70px 120px
+		padding: 1em 4em
+		#slider-ul
+			padding: 0em 1em 26em
+			position: relative
+			//overflow: hidden
+			button
+				margin-top: 3em
+			li
+				position: absolute
+				+transition(all 900ms $ease-out-quint)
+				display: inline-block
+				a
+					img
+						padding: 0.3em
+						border-radius: 8px
