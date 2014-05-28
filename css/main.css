@@ -427,3 +427,19 @@ body .hero-banner {
       body .hero-banner #slider-ul li a img {
         padding: 0.3em;
         border-radius: 8px; }
+      body .hero-banner #slider-ul li div.description {
+        padding: 0 0.3em;
+        position: absolute;
+        top: 0.3em; }
+        body .hero-banner #slider-ul li div.description > div {
+          background-color: rgba(51, 51, 51, 0.7);
+          padding: 2em 1em 20em 1em;
+          color: #c6c6c6;
+          text-shadow: 0 1px 2px black; }
+          body .hero-banner #slider-ul li div.description > div > hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #9a9a9a;
+            margin: 1em 0;
+            padding: 0; }
