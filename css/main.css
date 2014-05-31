@@ -399,7 +399,8 @@ nav {
 .title img {
   float: left; }
 .title h1 {
-  letter-spacing: -2px;
+  font-variant: small-caps;
+  letter-spacing: -1px;
   font-family: Roboto Slab, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 100;
   font-size: 4.5em;
