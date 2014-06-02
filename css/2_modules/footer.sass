@@ -1,0 +1,31 @@
+#section3	
+	footer
+		+clearfix
+		+fill-parent
+		+position(absolute, null null 0 null)
+		padding: 1em 1em
+		background: shade($company, 70%)
+		color: $medium-gray
+
+		ul
+			+outer-container
+			li
+				padding: 1em 1em
+				float: left
+				font-family: Lato, $helvetica
+				&:nth-child(2)
+					padding-left: 0.3em
+					border-right: thin solid $medium-gray
+			.li-img
+				padding: 0.5em
+				opacity: 0.5
+				float: right
+				&:first-child
+					padding-right: 0
+					float: left
+					opacity: 1
+				&:hover
+					opacity: 1
+				img
+					width: 2em
+		

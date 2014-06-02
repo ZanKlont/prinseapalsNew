@@ -1,6 +1,7 @@
 $(document).ready(function() {
+
 	var slidePos = 1;
-console.log(slidePos);
+	console.log(slidePos);
 	/*
 	Get the width of img and set the magin for each li.
 	Get the width of 
