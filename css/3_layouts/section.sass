@@ -4,16 +4,32 @@
 
 		.container
 			h1
+				text-align: center
+				padding: 1em
 				font-weight: 200
 				text-shadow: 0px 2px 2px tint($dark-gray, 10%)
 
 			img
-				+span-columns(6)
-				width: 35%
+				+span-columns(3)
 				border-radius: 5px
 				float: left
-			p
-				+span-columns(6)
+
+			.description
+				+span-columns(9)
+
+				p
+					padding: 0 2em
+			
+			.bullets
+				+span-columns(12)
+				padding: 1em
+				text-align: right
+
+				ul
+					+span-columns(3 of 12)
+					+shift(9)
+					list-style-type: circle
+					text-align: left
 
 #section1
 	color: #fff //$dark-gray

@@ -776,25 +776,47 @@ body {
  * Layouts section
  */
 .section:not(#section0) .slide .container h1 {
+  text-align: center;
+  padding: 1em;
   font-weight: 200;
   text-shadow: 0px 2px 2px #474747; }
 .section:not(#section0) .slide .container img {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  width: 35%;
+  width: 23.23176%;
   border-radius: 5px;
   float: left; }
   .section:not(#section0) .slide .container img:last-child {
     margin-right: 0; }
-.section:not(#section0) .slide .container p {
+.section:not(#section0) .slide .container .description {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  .section:not(#section0) .slide .container p:last-child {
+  width: 74.41059%; }
+  .section:not(#section0) .slide .container .description:last-child {
     margin-right: 0; }
+  .section:not(#section0) .slide .container .description p {
+    padding: 0 2em; }
+.section:not(#section0) .slide .container .bullets {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 1em;
+  text-align: right; }
+  .section:not(#section0) .slide .container .bullets:last-child {
+    margin-right: 0; }
+  .section:not(#section0) .slide .container .bullets ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-left: 76.76824%;
+    list-style-type: circle;
+    text-align: left; }
+    .section:not(#section0) .slide .container .bullets ul:last-child {
+      margin-right: 0; }
 
 #section1 {
   color: white;
