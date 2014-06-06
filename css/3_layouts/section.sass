@@ -1,48 +1,66 @@
 .section:not(#section0)
 
-	.slide
+	.container
 
-		.container
-			h1
-				text-align: center
-				padding: 1em
-				font-weight: 200
-				text-shadow: 0px 2px 2px tint($dark-gray, 10%)
+		h1, h4
+			text-align: center
+			padding: 1em
+			font-weight: 200
+			text-shadow: 0px 2px 2px tint($dark-gray, 10%)
+
+		.images
+			+span-columns(6)
 
 			img
-				+span-columns(3)
+				+span-columns(3 of 6)
 				border-radius: 5px
-				float: left
 
-			.description
-				+span-columns(9)
+		.desc
+			+span-columns(6)
+			margin-right: 0
 
-				p
-					padding: 0 2em
+			p
+				padding: 0 0 0 1em
 			
-			.bullets
-				+span-columns(12)
-				padding: 1em
-				text-align: right
+		.bullets
+			+span-columns(12)
+			padding: 1em
+			text-align: right
 
-				ul
-					+span-columns(3 of 12)
-					+shift(9)
-					list-style-type: circle
-					text-align: left
+			ul
+				+span-columns(3 of 12)
+				+shift(9)
+				list-style-type: circle
+				text-align: left
+
+				li
+					font-style: italic
 
 #section1
-	color: #fff //$dark-gray
-	//background-color: tint($company, 10%) //#1BBC9B
+	color: #fff 
 	+linear-gradient(tint($company, 10%), shade($company, 10%))
 	
 #section2
-	+outer-container
-
-#section3
 	
 	.container
-	
+		background: url(../img/about-us.png) no-repeat center
+
+		p
+			text-align: center
+			padding: 0 10em
+
+		ul
+			+span-columns(12)
+			list-style-type: square
+
+			li
+				text-align: center
+#section3
+	background: url(../img/about-us.png) #7E8F7C no-repeat center
+	color: #fff
+
+	.container
+		
 		h1
 			+transition(all 2000ms $ease-in-out-quart)
 			margin-left: -1em

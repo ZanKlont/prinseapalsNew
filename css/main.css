@@ -775,39 +775,46 @@ body {
 /*
  * Layouts section
  */
-.section:not(#section0) .slide .container h1 {
+.section:not(#section0) .container h1, .section:not(#section0) .container h4 {
   text-align: center;
   padding: 1em;
   font-weight: 200;
   text-shadow: 0px 2px 2px #474747; }
-.section:not(#section0) .slide .container img {
+.section:not(#section0) .container .images {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%;
-  border-radius: 5px;
-  float: left; }
-  .section:not(#section0) .slide .container img:last-child {
+  width: 48.82117%; }
+  .section:not(#section0) .container .images:last-child {
     margin-right: 0; }
-.section:not(#section0) .slide .container .description {
+  .section:not(#section0) .container .images img {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+    border-radius: 5px; }
+    .section:not(#section0) .container .images img:last-child {
+      margin-right: 0; }
+.section:not(#section0) .container .desc {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
-  .section:not(#section0) .slide .container .description:last-child {
+  width: 48.82117%;
+  margin-right: 0; }
+  .section:not(#section0) .container .desc:last-child {
     margin-right: 0; }
-  .section:not(#section0) .slide .container .description p {
-    padding: 0 2em; }
-.section:not(#section0) .slide .container .bullets {
+  .section:not(#section0) .container .desc p {
+    padding: 0 0 0 1em; }
+.section:not(#section0) .container .bullets {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
   padding: 1em;
   text-align: right; }
-  .section:not(#section0) .slide .container .bullets:last-child {
+  .section:not(#section0) .container .bullets:last-child {
     margin-right: 0; }
-  .section:not(#section0) .slide .container .bullets ul {
+  .section:not(#section0) .container .bullets ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -815,8 +822,10 @@ body {
     margin-left: 76.76824%;
     list-style-type: circle;
     text-align: left; }
-    .section:not(#section0) .slide .container .bullets ul:last-child {
+    .section:not(#section0) .container .bullets ul:last-child {
       margin-right: 0; }
+    .section:not(#section0) .container .bullets ul li {
+      font-style: italic; }
 
 #section1 {
   color: white;
@@ -824,19 +833,29 @@ body {
   background-image: -webkit-linear-gradient(#196a86, #00516c);
   background-image: linear-gradient(#196a86, #00516c); }
 
-#section2 {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  #section2:after {
-    content: "";
-    display: table;
-    clear: both; }
+#section2 .container {
+  background: url(../img/about-us.png) no-repeat center; }
+  #section2 .container p {
+    text-align: center;
+    padding: 0 10em; }
+  #section2 .container ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    list-style-type: square; }
+    #section2 .container ul:last-child {
+      margin-right: 0; }
+    #section2 .container ul li {
+      text-align: center; }
 
-#section3 .container h1 {
-  -webkit-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-  margin-left: -1em; }
-#section3 .container h1.effect {
-  margin-left: 0em; }
+#section3 {
+  background: url(../img/about-us.png) #7e8f7c no-repeat center;
+  color: white; }
+  #section3 .container h1 {
+    -webkit-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
+    margin-left: -1em; }
+  #section3 .container h1.effect {
+    margin-left: 0em; }
