@@ -5,19 +5,15 @@ $(document).ready(function() {
 		css3: true,
 		afterLoad: function(anchorLink, index) {
 
-            // Contact Us animation
-            if(anchorLink == 'contact-us'){
-            	
+            // First time scrollin fade in
+            if(index != 1){
+                $('#section' + (index - 1)).find('h1, h4, p, ul, table').css('opacity', '1');
             }
 
         },
         onLeave: function(from, destination, direction){ //alert(from+'   '+destination+'  '+direction);
         	if(destination == 4 && direction == 'down') {
-        		$('#section3 h1').addClass('effect');
-        	} else if(destination != 4 && direction == 'up') {
-        		setTimeout(function() {
-        			$('#section3 h1').removeClass('effect');
-        		}, 1000);
+        		//$('#section3 h1').addClass('effect');
         	}
         }			
 	});

@@ -776,10 +776,19 @@ body {
  * Layouts section
  */
 .section:not(#section0) .container h1, .section:not(#section0) .container h4 {
+  -webkit-transition: all 650ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 650ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 650ms cubic-bezier(0.77, 0, 0.175, 1);
   text-align: center;
   padding: 1em;
   font-weight: 200;
-  text-shadow: 0px 2px 2px #474747; }
+  text-shadow: 0px 2px 2px #474747;
+  opacity: 0; }
+.section:not(#section0) .container p, .section:not(#section0) .container ul, .section:not(#section0) .container table {
+  -webkit-transition: all 1100ms cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 1100ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 1100ms cubic-bezier(0.77, 0, 0.175, 1);
+  opacity: 0; }
 .section:not(#section0) .container .images {
   float: left;
   display: block;
@@ -852,10 +861,43 @@ body {
 #section3 {
   background: url(../img/about-us.png) #7e8f7c no-repeat center;
   color: white; }
-  #section3 .container h1 {
-    -webkit-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all 2000ms cubic-bezier(0.77, 0, 0.175, 1);
-    margin-left: -1em; }
-  #section3 .container h1.effect {
-    margin-left: 0em; }
+  #section3 .container table {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    border-top: thin solid #dddddd;
+    border-bottom: thin solid #dddddd;
+    padding: 1em; }
+    #section3 .container table:last-child {
+      margin-right: 0; }
+    #section3 .container table tr {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      #section3 .container table tr:last-child {
+        margin-right: 0; }
+      #section3 .container table tr th {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 48.21067%;
+        border: none;
+        text-align: right;
+        padding-right: 0.5em; }
+        #section3 .container table tr th:last-child {
+          margin-right: 0; }
+      #section3 .container table tr td {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 48.21067%;
+        border: none; }
+        #section3 .container table tr td:last-child {
+          margin-right: 0; }
+        #section3 .container table tr td a {
+          color: #a5c5d0; }
+          #section3 .container table tr td a:hover {
+            color: #005a79; }

@@ -3,10 +3,15 @@
 	.container
 
 		h1, h4
+			+transition(all 650ms $ease-in-out-quart)
 			text-align: center
 			padding: 1em
 			font-weight: 200
 			text-shadow: 0px 2px 2px tint($dark-gray, 10%)
+			opacity: 0
+		p, ul, table
+			+transition(all 1100ms $ease-in-out-quart)
+			opacity: 0
 
 		.images
 			+span-columns(6)
@@ -60,9 +65,29 @@
 	color: #fff
 
 	.container
-		
-		h1
-			+transition(all 2000ms $ease-in-out-quart)
-			margin-left: -1em
-		h1.effect
-			margin-left: 0em
+
+		table
+			+span-columns(8)
+			+shift(2)
+			border-top: thin solid $light-gray
+			border-bottom: thin solid $light-gray
+			padding: 1em
+
+			tr
+				+span-columns(8 of 8)
+
+				th
+					+span-columns(4 of 8)
+					border: none
+					text-align: right
+					padding-right: 0.5em
+
+				td
+					+span-columns(4 of 8)
+					border: none
+
+					a
+						color: tint($company, 65%)
+						&:hover
+							color: $company
+
