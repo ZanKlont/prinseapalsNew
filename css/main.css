@@ -844,19 +844,17 @@ body {
 
 #section2 .container {
   background: url(../img/about-us.png) no-repeat center; }
-  #section2 .container p {
-    text-align: center;
-    padding: 0 10em; }
+  #section2 .container h1 {
+    text-align: left; }
   #section2 .container ul {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%;
+    margin-left: 8.5298%;
     list-style-type: square; }
     #section2 .container ul:last-child {
       margin-right: 0; }
-    #section2 .container ul li {
-      text-align: center; }
 
 #section3 {
   background: url(../img/about-us.png) #7e8f7c no-repeat center;
